@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",                        // Modern JavaScript output
+    "module": "ESNext",                      // or "ESNext" for modern ESM
+    "outDir": "./dist",                        // Output directory
+    "rootDir": "./src",                        // Source directory
+    "strict": true,                            // Enable all strict type checks
+    "noImplicitAny": true,                     // Disallow variables with implicit 'any'
+    "noUnusedLocals": true,                    // Catch unused variables
+    "noUnusedParameters": true,                // Catch unused function parameters
+    "noFallthroughCasesInSwitch": true,        // Safer switch statements
+    "esModuleInterop": true,                   // Allow default imports from CommonJS
+    "forceConsistentCasingInFileNames": true,  // Avoid case mismatch bugs
+    "moduleResolution": "node",                // Resolve Node.js modules
+    "resolveJsonModule": true,                 // Allow importing .json files
+    "allowSyntheticDefaultImports": true,      // Import default from non-ESM modules
+    "declaration": true,                       // Generate .d.ts files for library use
+    "skipLibCheck": true,                      // Skip type checking of node_modules
+    "isolatedModules": true,                   // Ensures each file can be transpiled alone
+    "types": ["node"],                         // Include Node.js types
+    "lib": ["ES2020", "DOM"]                   // Include modern JS + browser types
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
+}
