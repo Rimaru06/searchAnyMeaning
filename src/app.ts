@@ -18,6 +18,6 @@ app.get("/", (req , res) =>  {
 
 app.use('/api/v1/',wordRoutes);
 
-
+//@ts-ignore
 app.use(errorHandler);
 export default app;
